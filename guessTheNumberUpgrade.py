@@ -6,15 +6,15 @@ import random
 # it has one parameter:
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
--def generateNumber( topLimit ):
-+def generateNumber( reply ):   
+def generateNumber( topLimit ):
+def generateNumber( reply ):   
 
     
     # TO DO: ####################################################
     # Write code in this function that calculates and           #
     # returns a random number between 1 and the user's topLimit #
     #############################################################
-+   return random.randint(1, reply)
+   return random.randint(1, reply)
 # end of generateNumber function -------------------------------------
 
 
@@ -46,11 +46,11 @@ def askUserToGuess( times, secretNumber ):
 #   the 'userGuess' parameter is the answer entered by the user
 #   the 'userSecretNumber' parameter is the randomly generated number
 def evaluateAnswer( userGuess, userSecretNumber ):
-   +   if userGuess < userSecretNumber:    
-    +   print('Guess was to low')
-    +   return False
-    +   elif userGuess > userSecretNumber:
-    +   print(That number is too high!') 
+      if userGuess < userSecretNumber:    
+       print('Guess was to low')
+       return False
+       elif userGuess > userSecretNumber:
+       print(That number is too high!') 
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
     # userSecretNumber. The code should:                        #
@@ -72,8 +72,8 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
-    +   print ('Welcome to my number generator game!!')
-    +   print('Please type the highest number you would like to guess for?')
+       print ('Welcome to my number generator game!!')
+       print('Please type the highest number you would like to guess for?')
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
