@@ -1,5 +1,4 @@
 # Joshua Ritmo
-import random
 import guessTheNumberUpgrade
 
 # this line runs your program
