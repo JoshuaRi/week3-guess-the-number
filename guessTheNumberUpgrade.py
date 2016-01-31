@@ -1,6 +1,6 @@
 # Joshua Ritmo
 import random
-
++guessTheNumberUpgrade.playGame( False )
 # -------------------------------------------------------------------
 # this is the generateNumber function
 # it has one parameter:
