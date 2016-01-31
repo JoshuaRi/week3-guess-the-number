@@ -7,15 +7,15 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-   
+   return random.randint(1, topLimit)
+   return theNumber
 
     
     # TO DO: ####################################################
     # Write code in this function that calculates and           #
     # returns a random number between 1 and the user's topLimit #
     #############################################################
-   return random.randint(1, topLimit)
-   return theNumber
+   
 # end of generateNumber function -------------------------------------
 
 
@@ -53,8 +53,9 @@ def evaluateAnswer( userGuess, userSecretNumber ):
        elif userGuess > userSecretNumber:
        print('That number is too high!') 
        return False
-       else:
+       elif userGuess == userSecretNumber:
           return True
+      
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
     # userSecretNumber. The code should:                        #
