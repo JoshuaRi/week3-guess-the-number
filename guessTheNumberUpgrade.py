@@ -46,13 +46,13 @@ def askUserToGuess( times, secretNumber ):
 # it has two parameters:
 #   the 'userGuess' parameter is the answer entered by the user
 #   the 'userSecretNumber' parameter is the randomly generated number
-def evaluateAnswer( userGuess, userSecretNumber ):
+def evaluateAnswer( userGuess, userSecretNumber):
       if userGuess < userSecretNumber:    
-      print('Guess was to low')
-      return False
+       print('Guess was to low')
+       return False
       elif userGuess > userSecretNumber:
-      print('That number is too high!') 
-      return False
+       print('That number is too high!') 
+       return False
       elif userGuess == userSecretNumber:
        return True
       
