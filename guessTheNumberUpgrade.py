@@ -15,6 +15,7 @@ def generateNumber( topLimit ):
     # returns a random number between 1 and the user's topLimit #
     #############################################################
    return random.randint(1, topLimit)
+   return theNumber
 # end of generateNumber function -------------------------------------
 
 
