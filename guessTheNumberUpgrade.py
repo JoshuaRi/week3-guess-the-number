@@ -79,9 +79,9 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
        print ('Welcome to my number generator game!!')
        print('Please type the highest number you would like to guess for!')
-       myTopLimit = int(input())
-       theNumber = generateNumber(myTopLimit))
-       print(' Guess any number between 1 and ' + str(myTopLimit))
+       topLimit = int(input())
+       theNumber = generateNumber(topLimit))
+       print(' Guess any number between 1 and ' + str(topLimit))
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
