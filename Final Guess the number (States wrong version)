@@ -1,5 +1,5 @@
 # Joshua Ritmo
-import guessTheNumberUpgrade
+import random
 
 # this line runs your program
 # using the True parameter should show the random number on the screen
