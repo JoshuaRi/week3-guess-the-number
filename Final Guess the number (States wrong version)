@@ -50,10 +50,10 @@ def evaluateAnswer( userGuess, userSecretNumber):
    if userGuess < userSecretNumber:    
       print('Guess was to low')
       return False
-   elif userGuess > userSecretNumber:
+   else: userGuess > userSecretNumber:
       print('That number is too high!') 
       return False
-   elif userGuess == userSecretNumber:
+   else: userGuess == userSecretNumber:
       return True
       
     # TO DO: ####################################################
